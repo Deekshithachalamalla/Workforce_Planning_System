@@ -1,0 +1,7 @@
+issue_type,record_id,explanation
+allocation_exceeds_availability,ALLOC-2026W01-0000001,Total allocated hours 89.0 exceed available hours 40.0.
+allocation_exceeds_availability,ALLOC-ANOM-052092,Total allocated hours 89.0 exceed available hours 40.0.
+stale_skill_treated_current,ES-00000001,Skill is claimed current despite stale or expired verification.
+demand_double_counted,DEM-DUP-052092,Repeated project-role-skill-period demand.
+employee_overlapping_projects,ALLOC-2026W01-0000001,Employee EMP-003795 has allocations to multiple projects during 2026W01.
+employee_overlapping_projects,ALLOC-ANOM-052092,Employee EMP-003795 has allocations to multiple projects during 2026W01.

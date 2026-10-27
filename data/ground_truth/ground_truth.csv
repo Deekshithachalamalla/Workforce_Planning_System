@@ -1,0 +1,5 @@
+issue_id,issue_type,entity_type,record_id,expected_decision
+ISSUE-0001,allocation_exceeds_availability,Allocation,ALLOC-2026W01-0000001,Flag when total allocated hours exceed 40.0 available hours.
+ISSUE-0002,stale_skill_treated_current,EmployeeSkill,ES-00000001,Flag a skill claimed current despite stale verification.
+ISSUE-0003,demand_double_counted,DemandPlan,DEM-DUP-052092,Flag duplicate project-role-skill-period demand.
+ISSUE-0004,employee_overlapping_projects,Allocation,ALLOC-ANOM-052092,Flag the employee assigned to multiple projects in the same period.

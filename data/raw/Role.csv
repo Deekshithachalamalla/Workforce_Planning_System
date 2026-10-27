@@ -1,0 +1,11 @@
+role_id,role_name,active
+ROLE-000001,Python Developer,True
+ROLE-000002,AI Engineer,True
+ROLE-000003,Data Engineer,True
+ROLE-000004,Data Analyst,True
+ROLE-000005,Software Tester,True
+ROLE-000006,Project Manager,True
+ROLE-000007,Cloud Engineer,True
+ROLE-000008,Frontend Developer,True
+ROLE-000009,Backend Developer,True
+ROLE-000010,Business Analyst,True

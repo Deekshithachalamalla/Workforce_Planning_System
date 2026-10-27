@@ -1,0 +1,5 @@
+issue_type,record_id,detected
+allocation_exceeds_availability,ALLOC-2026W01-0000001,True
+stale_skill_treated_current,ES-00000001,True
+demand_double_counted,DEM-DUP-052092,True
+employee_overlapping_projects,ALLOC-ANOM-052092,True

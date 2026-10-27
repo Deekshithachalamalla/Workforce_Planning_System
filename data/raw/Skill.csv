@@ -1,0 +1,301 @@
+skill_id,skill_name,active,validity_days
+SKL-000001,Python,True,365
+SKL-000002,SQL,True,365
+SKL-000003,Machine Learning,True,365
+SKL-000004,Deep Learning,True,365
+SKL-000005,Data Analysis,True,365
+SKL-000006,Pandas,True,365
+SKL-000007,NumPy,True,365
+SKL-000008,Power BI,True,365
+SKL-000009,Tableau,True,365
+SKL-000010,AWS,True,365
+SKL-000011,Azure,True,365
+SKL-000012,Docker,True,365
+SKL-000013,Git,True,365
+SKL-000014,JavaScript,True,365
+SKL-000015,React,True,365
+SKL-000016,HTML,True,365
+SKL-000017,CSS,True,365
+SKL-000018,Java,True,365
+SKL-000019,Testing,True,365
+SKL-000020,Communication,True,365
+SKL-000021,Project Management,True,365
+SKL-000022,Excel,True,365
+SKL-000023,Statistics,True,365
+SKL-000024,PyTorch,True,365
+SKL-000025,TensorFlow,True,365
+SKL-000026,NLP,True,365
+SKL-000027,Computer Vision,True,365
+SKL-000028,Spark,True,365
+SKL-000029,Linux,True,365
+SKL-000030,REST APIs,True,365
+SKL-000031,Specialized Skill 31,True,365
+SKL-000032,Specialized Skill 32,True,365
+SKL-000033,Specialized Skill 33,True,365
+SKL-000034,Specialized Skill 34,True,365
+SKL-000035,Specialized Skill 35,True,365
+SKL-000036,Specialized Skill 36,True,365
+SKL-000037,Specialized Skill 37,True,365
+SKL-000038,Specialized Skill 38,True,365
+SKL-000039,Specialized Skill 39,True,365
+SKL-000040,Specialized Skill 40,True,365
+SKL-000041,Specialized Skill 41,True,365
+SKL-000042,Specialized Skill 42,True,365
+SKL-000043,Specialized Skill 43,True,365
+SKL-000044,Specialized Skill 44,True,365
+SKL-000045,Specialized Skill 45,True,365
+SKL-000046,Specialized Skill 46,True,365
+SKL-000047,Specialized Skill 47,True,365
+SKL-000048,Specialized Skill 48,True,365
+SKL-000049,Specialized Skill 49,True,365
+SKL-000050,Specialized Skill 50,True,365
+SKL-000051,Specialized Skill 51,True,365
+SKL-000052,Specialized Skill 52,True,365
+SKL-000053,Specialized Skill 53,True,365
+SKL-000054,Specialized Skill 54,True,365
+SKL-000055,Specialized Skill 55,True,365
+SKL-000056,Specialized Skill 56,True,365
+SKL-000057,Specialized Skill 57,True,365
+SKL-000058,Specialized Skill 58,True,365
+SKL-000059,Specialized Skill 59,True,365
+SKL-000060,Specialized Skill 60,True,365
+SKL-000061,Specialized Skill 61,True,365
+SKL-000062,Specialized Skill 62,True,365
+SKL-000063,Specialized Skill 63,True,365
+SKL-000064,Specialized Skill 64,True,365
+SKL-000065,Specialized Skill 65,True,365
+SKL-000066,Specialized Skill 66,True,365
+SKL-000067,Specialized Skill 67,True,365
+SKL-000068,Specialized Skill 68,True,365
+SKL-000069,Specialized Skill 69,True,365
+SKL-000070,Specialized Skill 70,True,365
+SKL-000071,Specialized Skill 71,True,365
+SKL-000072,Specialized Skill 72,True,365
+SKL-000073,Specialized Skill 73,True,365
+SKL-000074,Specialized Skill 74,True,365
+SKL-000075,Specialized Skill 75,True,365
+SKL-000076,Specialized Skill 76,True,365
+SKL-000077,Specialized Skill 77,True,365
+SKL-000078,Specialized Skill 78,True,365
+SKL-000079,Specialized Skill 79,True,365
+SKL-000080,Specialized Skill 80,True,365
+SKL-000081,Specialized Skill 81,True,365
+SKL-000082,Specialized Skill 82,True,365
+SKL-000083,Specialized Skill 83,True,365
+SKL-000084,Specialized Skill 84,True,365
+SKL-000085,Specialized Skill 85,True,365
+SKL-000086,Specialized Skill 86,True,365
+SKL-000087,Specialized Skill 87,True,365
+SKL-000088,Specialized Skill 88,True,365
+SKL-000089,Specialized Skill 89,True,365
+SKL-000090,Specialized Skill 90,True,365
+SKL-000091,Specialized Skill 91,True,365
+SKL-000092,Specialized Skill 92,True,365
+SKL-000093,Specialized Skill 93,True,365
+SKL-000094,Specialized Skill 94,True,365
+SKL-000095,Specialized Skill 95,True,365
+SKL-000096,Specialized Skill 96,True,365
+SKL-000097,Specialized Skill 97,True,365
+SKL-000098,Specialized Skill 98,True,365
+SKL-000099,Specialized Skill 99,True,365
+SKL-000100,Specialized Skill 100,True,365
+SKL-000101,Specialized Skill 101,True,365
+SKL-000102,Specialized Skill 102,True,365
+SKL-000103,Specialized Skill 103,True,365
+SKL-000104,Specialized Skill 104,True,365
+SKL-000105,Specialized Skill 105,True,365
+SKL-000106,Specialized Skill 106,True,365
+SKL-000107,Specialized Skill 107,True,365
+SKL-000108,Specialized Skill 108,True,365
+SKL-000109,Specialized Skill 109,True,365
+SKL-000110,Specialized Skill 110,True,365
+SKL-000111,Specialized Skill 111,True,365
+SKL-000112,Specialized Skill 112,True,365
+SKL-000113,Specialized Skill 113,True,365
+SKL-000114,Specialized Skill 114,True,365
+SKL-000115,Specialized Skill 115,True,365
+SKL-000116,Specialized Skill 116,True,365
+SKL-000117,Specialized Skill 117,True,365
+SKL-000118,Specialized Skill 118,True,365
+SKL-000119,Specialized Skill 119,True,365
+SKL-000120,Specialized Skill 120,True,365
+SKL-000121,Specialized Skill 121,True,365
+SKL-000122,Specialized Skill 122,True,365
+SKL-000123,Specialized Skill 123,True,365
+SKL-000124,Specialized Skill 124,True,365
+SKL-000125,Specialized Skill 125,True,365
+SKL-000126,Specialized Skill 126,True,365
+SKL-000127,Specialized Skill 127,True,365
+SKL-000128,Specialized Skill 128,True,365
+SKL-000129,Specialized Skill 129,True,365
+SKL-000130,Specialized Skill 130,True,365
+SKL-000131,Specialized Skill 131,True,365
+SKL-000132,Specialized Skill 132,True,365
+SKL-000133,Specialized Skill 133,True,365
+SKL-000134,Specialized Skill 134,True,365
+SKL-000135,Specialized Skill 135,True,365
+SKL-000136,Specialized Skill 136,True,365
+SKL-000137,Specialized Skill 137,True,365
+SKL-000138,Specialized Skill 138,True,365
+SKL-000139,Specialized Skill 139,True,365
+SKL-000140,Specialized Skill 140,True,365
+SKL-000141,Specialized Skill 141,True,365
+SKL-000142,Specialized Skill 142,True,365
+SKL-000143,Specialized Skill 143,True,365
+SKL-000144,Specialized Skill 144,True,365
+SKL-000145,Specialized Skill 145,True,365
+SKL-000146,Specialized Skill 146,True,365
+SKL-000147,Specialized Skill 147,True,365
+SKL-000148,Specialized Skill 148,True,365
+SKL-000149,Specialized Skill 149,True,365
+SKL-000150,Specialized Skill 150,True,365
+SKL-000151,Specialized Skill 151,True,365
+SKL-000152,Specialized Skill 152,True,365
+SKL-000153,Specialized Skill 153,True,365
+SKL-000154,Specialized Skill 154,True,365
+SKL-000155,Specialized Skill 155,True,365
+SKL-000156,Specialized Skill 156,True,365
+SKL-000157,Specialized Skill 157,True,365
+SKL-000158,Specialized Skill 158,True,365
+SKL-000159,Specialized Skill 159,True,365
+SKL-000160,Specialized Skill 160,True,365
+SKL-000161,Specialized Skill 161,True,365
+SKL-000162,Specialized Skill 162,True,365
+SKL-000163,Specialized Skill 163,True,365
+SKL-000164,Specialized Skill 164,True,365
+SKL-000165,Specialized Skill 165,True,365
+SKL-000166,Specialized Skill 166,True,365
+SKL-000167,Specialized Skill 167,True,365
+SKL-000168,Specialized Skill 168,True,365
+SKL-000169,Specialized Skill 169,True,365
+SKL-000170,Specialized Skill 170,True,365
+SKL-000171,Specialized Skill 171,True,365
+SKL-000172,Specialized Skill 172,True,365
+SKL-000173,Specialized Skill 173,True,365
+SKL-000174,Specialized Skill 174,True,365
+SKL-000175,Specialized Skill 175,True,365
+SKL-000176,Specialized Skill 176,True,365
+SKL-000177,Specialized Skill 177,True,365
+SKL-000178,Specialized Skill 178,True,365
+SKL-000179,Specialized Skill 179,True,365
+SKL-000180,Specialized Skill 180,True,365
+SKL-000181,Specialized Skill 181,True,365
+SKL-000182,Specialized Skill 182,True,365
+SKL-000183,Specialized Skill 183,True,365
+SKL-000184,Specialized Skill 184,True,365
+SKL-000185,Specialized Skill 185,True,365
+SKL-000186,Specialized Skill 186,True,365
+SKL-000187,Specialized Skill 187,True,365
+SKL-000188,Specialized Skill 188,True,365
+SKL-000189,Specialized Skill 189,True,365
+SKL-000190,Specialized Skill 190,True,365
+SKL-000191,Specialized Skill 191,True,365
+SKL-000192,Specialized Skill 192,True,365
+SKL-000193,Specialized Skill 193,True,365
+SKL-000194,Specialized Skill 194,True,365
+SKL-000195,Specialized Skill 195,True,365
+SKL-000196,Specialized Skill 196,True,365
+SKL-000197,Specialized Skill 197,True,365
+SKL-000198,Specialized Skill 198,True,365
+SKL-000199,Specialized Skill 199,True,365
+SKL-000200,Specialized Skill 200,True,365
+SKL-000201,Specialized Skill 201,True,365
+SKL-000202,Specialized Skill 202,True,365
+SKL-000203,Specialized Skill 203,True,365
+SKL-000204,Specialized Skill 204,True,365
+SKL-000205,Specialized Skill 205,True,365
+SKL-000206,Specialized Skill 206,True,365
+SKL-000207,Specialized Skill 207,True,365
+SKL-000208,Specialized Skill 208,True,365
+SKL-000209,Specialized Skill 209,True,365
+SKL-000210,Specialized Skill 210,True,365
+SKL-000211,Specialized Skill 211,True,365
+SKL-000212,Specialized Skill 212,True,365
+SKL-000213,Specialized Skill 213,True,365
+SKL-000214,Specialized Skill 214,True,365
+SKL-000215,Specialized Skill 215,True,365
+SKL-000216,Specialized Skill 216,True,365
+SKL-000217,Specialized Skill 217,True,365
+SKL-000218,Specialized Skill 218,True,365
+SKL-000219,Specialized Skill 219,True,365
+SKL-000220,Specialized Skill 220,True,365
+SKL-000221,Specialized Skill 221,True,365
+SKL-000222,Specialized Skill 222,True,365
+SKL-000223,Specialized Skill 223,True,365
+SKL-000224,Specialized Skill 224,True,365
+SKL-000225,Specialized Skill 225,True,365
+SKL-000226,Specialized Skill 226,True,365
+SKL-000227,Specialized Skill 227,True,365
+SKL-000228,Specialized Skill 228,True,365
+SKL-000229,Specialized Skill 229,True,365
+SKL-000230,Specialized Skill 230,True,365
+SKL-000231,Specialized Skill 231,True,365
+SKL-000232,Specialized Skill 232,True,365
+SKL-000233,Specialized Skill 233,True,365
+SKL-000234,Specialized Skill 234,True,365
+SKL-000235,Specialized Skill 235,True,365
+SKL-000236,Specialized Skill 236,True,365
+SKL-000237,Specialized Skill 237,True,365
+SKL-000238,Specialized Skill 238,True,365
+SKL-000239,Specialized Skill 239,True,365
+SKL-000240,Specialized Skill 240,True,365
+SKL-000241,Specialized Skill 241,True,365
+SKL-000242,Specialized Skill 242,True,365
+SKL-000243,Specialized Skill 243,True,365
+SKL-000244,Specialized Skill 244,True,365
+SKL-000245,Specialized Skill 245,True,365
+SKL-000246,Specialized Skill 246,True,365
+SKL-000247,Specialized Skill 247,True,365
+SKL-000248,Specialized Skill 248,True,365
+SKL-000249,Specialized Skill 249,True,365
+SKL-000250,Specialized Skill 250,True,365
+SKL-000251,Specialized Skill 251,True,365
+SKL-000252,Specialized Skill 252,True,365
+SKL-000253,Specialized Skill 253,True,365
+SKL-000254,Specialized Skill 254,True,365
+SKL-000255,Specialized Skill 255,True,365
+SKL-000256,Specialized Skill 256,True,365
+SKL-000257,Specialized Skill 257,True,365
+SKL-000258,Specialized Skill 258,True,365
+SKL-000259,Specialized Skill 259,True,365
+SKL-000260,Specialized Skill 260,True,365
+SKL-000261,Specialized Skill 261,True,365
+SKL-000262,Specialized Skill 262,True,365
+SKL-000263,Specialized Skill 263,True,365
+SKL-000264,Specialized Skill 264,True,365
+SKL-000265,Specialized Skill 265,True,365
+SKL-000266,Specialized Skill 266,True,365
+SKL-000267,Specialized Skill 267,True,365
+SKL-000268,Specialized Skill 268,True,365
+SKL-000269,Specialized Skill 269,True,365
+SKL-000270,Specialized Skill 270,True,365
+SKL-000271,Specialized Skill 271,True,365
+SKL-000272,Specialized Skill 272,True,365
+SKL-000273,Specialized Skill 273,True,365
+SKL-000274,Specialized Skill 274,True,365
+SKL-000275,Specialized Skill 275,True,365
+SKL-000276,Specialized Skill 276,True,365
+SKL-000277,Specialized Skill 277,True,365
+SKL-000278,Specialized Skill 278,True,365
+SKL-000279,Specialized Skill 279,True,365
+SKL-000280,Specialized Skill 280,True,365
+SKL-000281,Specialized Skill 281,True,365
+SKL-000282,Specialized Skill 282,True,365
+SKL-000283,Specialized Skill 283,True,365
+SKL-000284,Specialized Skill 284,True,365
+SKL-000285,Specialized Skill 285,True,365
+SKL-000286,Specialized Skill 286,True,365
+SKL-000287,Specialized Skill 287,True,365
+SKL-000288,Specialized Skill 288,True,365
+SKL-000289,Specialized Skill 289,True,365
+SKL-000290,Specialized Skill 290,True,365
+SKL-000291,Specialized Skill 291,True,365
+SKL-000292,Specialized Skill 292,True,365
+SKL-000293,Specialized Skill 293,True,365
+SKL-000294,Specialized Skill 294,True,365
+SKL-000295,Specialized Skill 295,True,365
+SKL-000296,Specialized Skill 296,True,365
+SKL-000297,Specialized Skill 297,True,365
+SKL-000298,Specialized Skill 298,True,365
+SKL-000299,Specialized Skill 299,True,365
+SKL-000300,Specialized Skill 300,True,365
