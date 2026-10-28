@@ -109,7 +109,7 @@ def calculate_utilization():
     return result
 
 
-def calculate_skill_gaps():
+def calculate_skill_gaps(return_reservations=False):
     """Compare project demand with allocations and qualified capacity."""
 
     employees = load_table("Employee")
@@ -175,20 +175,32 @@ def calculate_skill_gaps():
         & profiles["active"].eq(True)
     )
 
-    # Count qualified, current-skill capacity for each demand line.
+
+    # Coordinate proposed capacity reservations across demand lines.
+    # Existing allocations are deducted first; raw assignments are unchanged.
     availability_lookup = availability.set_index(
         ["employee_id", "period"]
     )["available_hours"].to_dict()
 
     allocation_lookup = (
-        allocations.groupby(
-            ["employee_id", "period"]
-        )["allocated_hours"]
+        allocations.groupby(["employee_id", "period"])["allocated_hours"]
         .sum()
         .to_dict()
     )
 
+    # Track each employee's uncommitted capacity for each period.
+    remaining_capacity = {
+        key: max(0, hours - allocation_lookup.get(key, 0))
+        for key, hours in availability_lookup.items()
+    }
+
+
+    reservation_ledger = []
     gap_rows = []
+
+    # Count qualified employees for each demand before reserving capacity.
+    # This helps prioritize demands with fewer eligible employees.
+    eligibility_counts = []
 
     for row in demand.to_dict("records"):
         eligible = profiles[
@@ -196,35 +208,90 @@ def calculate_skill_gaps():
             & (profiles["skill_id"] == row["skill_id"])
             & (profiles["proficiency"] >= row["minimum_proficiency"])
             & (profiles["status"] == "active")
-            & (profiles["skill_is_current"])
+            & profiles["skill_is_current"]
         ]
 
-        qualified_remaining_hours = 0.0
+        eligibility_counts.append(
+            len(eligible["employee_id"].unique())
+        )
 
-        for employee_id in eligible["employee_id"].unique():
-            available_hours = availability_lookup.get(
-                (employee_id, row["period"]), 0
-            )
+    demand = demand.copy()
+    demand["eligible_employee_count"] = eligibility_counts
 
-            allocated_hours = allocation_lookup.get(
-                (employee_id, row["period"]), 0
-            )
+    # Within each period, consider the scarcest demands first.
+    # Demand ID provides a deterministic tie-breaker.
+    ordered_demand = demand.sort_values(
+        ["period", "eligible_employee_count", "demand_id"],
+        kind="stable",
+    )
 
-            qualified_remaining_hours += max(
-                0,
-                available_hours - allocated_hours,
-            )
+
+    for row in ordered_demand.to_dict("records"):
+        eligible = profiles[
+            (profiles["role_id"] == row["role_id"])
+            & (profiles["skill_id"] == row["skill_id"])
+            & (profiles["proficiency"] >= row["minimum_proficiency"])
+            & (profiles["status"] == "active")
+            & profiles["skill_is_current"]
+        ]
+
+        # Deduplicate employees so each person's capacity is counted once.
+        eligible_ids = sorted(eligible["employee_id"].unique())
+
+        eligible_capacity_before_reservation = sum(
+            remaining_capacity.get((employee_id, row["period"]), 0)
+            for employee_id in eligible_ids
+        )
 
         gap_hours = max(
             0,
             row["required_hours"] - row["assigned_hours"],
         )
 
+        # Reserve only enough proposed capacity to cover this demand gap.
+        reserved_hours = min(
+            gap_hours,
+            eligible_capacity_before_reservation,
+        )
+
+        hours_left_to_reserve = reserved_hours
+
+        for employee_id in eligible_ids:
+            key = (employee_id, row["period"])
+            employee_remaining = remaining_capacity.get(key, 0)
+
+            reserved_from_employee = min(
+                employee_remaining,
+                hours_left_to_reserve,
+            )
+
+
+            remaining_capacity[key] = (
+                employee_remaining - reserved_from_employee
+            )
+
+            if reserved_from_employee > 0:
+                reservation_ledger.append({
+                    "demand_id": row["demand_id"],
+                    "employee_id": employee_id,
+                    "period": row["period"],
+                    "reserved_hours": reserved_from_employee,
+                })
+
+            hours_left_to_reserve -= reserved_from_employee
+
+            if hours_left_to_reserve <= 0:
+                break
+
+        # This value is now the proposed capacity reserved for this demand,
+        # not the independent sum of all employees' available capacity.
+        qualified_remaining_hours = reserved_hours
+
         if gap_hours == 0:
             action = "no_action"
-        elif qualified_remaining_hours >= gap_hours:
+        elif reserved_hours >= gap_hours:
             action = "reallocate_or_assign"
-        elif qualified_remaining_hours > 0:
+        elif reserved_hours > 0:
             action = "reallocate_and_train_or_hire"
         else:
             action = "train_or_hire"
@@ -240,8 +307,11 @@ def calculate_skill_gaps():
             "assigned_hours": row["assigned_hours"],
             "uncovered_hours": gap_hours,
             "qualified_remaining_hours": qualified_remaining_hours,
+            "eligible_capacity_before_reservation_hours":
+                eligible_capacity_before_reservation,
             "recommended_action": action,
         })
+
 
     gaps = pd.DataFrame(gap_rows)
 
@@ -259,7 +329,21 @@ def calculate_skill_gaps():
         index=False,
     )
 
+
+    if return_reservations:
+        reservations = pd.DataFrame(
+            reservation_ledger,
+            columns=[
+                "demand_id",
+                "employee_id",
+                "period",
+                "reserved_hours",
+            ],
+        )
+        return gaps, reservations
+
     return gaps
+
 
 
 def main():
