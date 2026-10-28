@@ -10,6 +10,13 @@ A Python-based workforce planning system that analyzes project demand, employee 
 
 
 
+\## Live Demo
+
+**Try the application:** [Open Workforce Planning Dashboard](https://workforceplanningsystem-v8rpg54lqpfnkhytplrjff.streamlit.app)
+
+Explore workforce utilization, demand forecasting, skill gaps, anomaly detection, and downloadable reports.
+
+
 \## Dataset
 
 
