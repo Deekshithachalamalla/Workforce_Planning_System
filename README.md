@@ -70,7 +70,7 @@ Python, Pandas, NumPy, Faker, Streamlit, Plotly, and pytest.
 
 ```text
 
-Workforce\_Planning\_System/
+Workforce_Planning_System/
 
 ├── dashboard/
 
@@ -82,23 +82,23 @@ Workforce\_Planning\_System/
 
 │   ├── processed/
 
-│   └── ground\_truth/
+│   └── ground_truth/
 
 ├── src/
 
-│   ├── generate\_data.py
+│   ├── generate_data.py
 
-│   ├── generate\_transactions.py
+│   ├── generate_transactions.py
 
-│   ├── business\_logic.py
+│   ├── business_logic.py
 
-│   ├── inject\_anomalies.py
+│   ├── inject_anomalies.py
 
-│   └── validate\_data.py
+│   └── validate_data.py
 
 ├── tests/
 
-│   └── test\_system.py
+│   └── test_system.py
 
 ├── .gitignore
 
