@@ -195,6 +195,20 @@ Run each command in order:
 
 Run anomaly injection only once per freshly generated dataset.
 
+## Reproducibility and Validation
+
+- **Deterministic data generation:** Verified that master and transaction CSV files generated using the same seed and configuration are identical across two independent runs.
+
+- **Anomaly detection reproducibility:** SHA-256 comparisons confirmed that `anomaly_findings.csv` and `ground_truth_evaluation.csv` are identical across repeated validation runs.
+
+- **Ground-truth evaluation:** All 4 labelled anomalies in the test dataset were detected (4/4).
+
+- **Detected findings:** 6 findings across four anomaly categories: over-capacity allocations, overlapping project assignments, stale skills marked as current, and duplicate demand.
+
+- **Test isolation:** Reproducibility checks were performed in a separate test directory to avoid intentionally overwriting the original working dataset.
+
+These results apply to the tested dataset, configuration, and execution environment.
+
 
 
 \## Launch the Dashboard
