@@ -270,3 +270,12 @@ The latest recorded test run passed six automated tests. The validator detected 
 
 
 
+## Dashboard Screenshots
+
+### 1. Workforce Overview
+
+![Workforce dashboard overview](images/dashboard-overview.png)
+
+### 2. Anomaly Detection Results
+
+![Anomaly findings](images/anomaly-findings.png)
